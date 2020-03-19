@@ -13,27 +13,31 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+// Route::get('/', function () {
+//     return view('home');
+// });
 
-Route::get('/about', function () {
-    return view('about');
-});
+// Route::get('/about', function () {
+//     return view('about');
+// });
 
-Route::get('/home', function () {
-    return view('home');
-});
+// Route::get('/home', function () {
+//     return view('home');
+// });
 
-Route::get('/info', function () {
-    return view('info');
-});
+// Route::get('/info', function () {
+//     return view('info');
+// });
 
-Route::get('/index', function () {
-    return view('index');
-});
+// Route::get('/index', function () {
+//     return view('index');
+// });
 
 
 
-Route:: get('/','PageController@home');
+Route:: get('/','PageController@index');
 Route:: get('/about','PageController@about');
+
+Route:: get('/home','PageController@home');
+Route:: get('/mahasiswa','MahaSiswacontroller@index');
+ 
