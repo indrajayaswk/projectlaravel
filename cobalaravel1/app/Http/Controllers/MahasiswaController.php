@@ -3,17 +3,18 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use App\mahasiswa;
 
 class MahasiswaController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+   
     public function index()
     {
-        return view('mahasiswa.index');
+        // $mahasiswa=DB::table('students')->get();
+        $mahasiswa = mahasiswa::all();
+        dump($mahasiswa);
+        return view('mahasiswa.index',['mahasiswa'=> $mahasiswa]);
     }
 
     /**
