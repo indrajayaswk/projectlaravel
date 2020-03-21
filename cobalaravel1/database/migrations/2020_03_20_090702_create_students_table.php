@@ -17,8 +17,8 @@ class CreateStudentsTable extends Migration
             $table->bigincrements('id');
             $table->string('nama',255);
             $table->char('npr',9)->unique();
-            $table->char('kelas',255)->unique();
-            $table->char('jurusan',255); 
+            $table->string('email',255)->unique();
+            $table->string('jurusan',255); 
             $table->timestamps();
         });
     }

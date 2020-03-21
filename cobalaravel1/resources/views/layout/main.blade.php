@@ -26,9 +26,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{url('/about')}}">about</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link" href="{{url('/mahasiswa')}}">Mahasiswa</a>
-            </li>
+            </li> -->
             <li class="nav-item">
                 <a class="nav-link" href="{{url('/students')}}">Students</a>
             </li>
